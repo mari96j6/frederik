@@ -1,0 +1,169 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway", sans-serif;
+}
+
+header h1 {
+  text-align: center;
+  letter-spacing: 1rem;
+}
+main {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.opgavetekst {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.opdel {
+  padding: 2rem;
+  background: rgb(101, 101, 101);
+  text-align: center;
+}
+.opdel1 {
+  padding: 2rem;
+  background: rgb(101, 101, 101);
+  text-align: center;
+  margin-top: 5rem;
+}
+
+footer {
+  position: sticky;
+  top: 100vh;
+  text-align: center;
+  font-size: 0.5rem;
+  margin-top: 10rem;
+}
+
+.billede {
+  display: flex;
+  justify-content: center;
+  max-width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.logo {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  max-width: 20rem;
+  padding: 3rem;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+  max-width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 60%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+@media (min-width: 800px) {
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 55%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+
+  .container {
+    position: relative;
+    max-width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .opgavetekst {
+    padding-left: 15rem;
+    padding-right: 15rem;
+  }
+}
