@@ -56,8 +56,8 @@ footer {
   position: fixed;
   bottom: 0;
   right: 0;
-  max-width: 20rem;
-  padding: 3rem;
+  max-width: 15rem;
+  padding: 1rem;
 }
 
 /* Position the image container (needed to position the left and right arrows) */
